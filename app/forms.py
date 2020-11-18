@@ -8,7 +8,6 @@ class ImageForm(forms.ModelForm):
       fields = ['image','name']
 
 
-
 class AspiranteForm(forms.ModelForm):
     class Meta:
         model = Aspirante
