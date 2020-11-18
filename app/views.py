@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .models import *
 from django.forms import modelformset_factory
 
+from .forms import AspiranteForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -18,7 +20,26 @@ def quienes_somos(request):
 
 
 def registrate(request):
-    return render (request, 'app/registrate.html')
+    data = {
+        'form': AspiranteForm()
+    }
+
+    if request.method == 'POST':
+        formulario = AspiranteForm(data=request.POST)
+        if formulario.is_valid():
+
+            formulario.save()
+            messages.success(request, 'Registro Exitoso')
+
+        else:
+            data["form"] = formulario
+
+
+    return render (request, 'app/registrate.html',data)
+
+
+
+
 
 def image_gallery(request):
     images = Image.objects.all()

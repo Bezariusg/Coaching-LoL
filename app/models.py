@@ -14,6 +14,7 @@ class Server(models.Model):
     def __str__(self):
         return self.nombre
 
+
 class Aspirante(models.Model):
     nombre = models.CharField(max_length = 15)
     correo = models.EmailField()
