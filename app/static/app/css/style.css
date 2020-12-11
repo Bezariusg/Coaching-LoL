@@ -12,7 +12,7 @@ p{
 }
 
 .contenedor {
-    width: 90%;
+    width: 100%;
     max-width: 850px;
     margin: 0 auto;
 
@@ -35,14 +35,15 @@ text-align: center;
     top: 0;
     width: 100%; /* ocupe en ancho completo */
 }
-    .header a{
-        float: left;
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
+.header a{
+
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 
 
-    }
+}
 
 .completo{
     display: flex ;
@@ -71,7 +72,7 @@ text-align: center;
 }
 
 .main {
-    padding-top:20rem;
+    padding-top:15rem;
 }
 
 
@@ -201,12 +202,12 @@ body {
 }
 form {
 
-    width: 800px;
+    /*width: 800px;
     min-height: 500px;
-    height: auto;
+    /*height: auto;*/
     border-radius: 5px;
     margin: 2% auto;
-    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    /*box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);*/
     padding: 2%;
     background-color:#041c23;
     color: cornsilk;
@@ -276,4 +277,22 @@ input[type=text], select, input[type=email] {
 
     background : red;
 
+}
+
+
+
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+
+/* selected link */
+a:active {
+  color: blue;
 }
