@@ -1,0 +1,9 @@
+Este archivo contiene indicaciones para poder montar el proyecto.
+
+1. Instalar requirements.txt (pip install -r requirements.txt)
+2. El nombre del usuario Administrador es : gera
+3. La contraseña del usuario Administrador es : 123
+
+Recordatorio:
+Favor su atención para modificar la primera nota de la asignatura (la cual fue
+revisada por segunda vez por observaciones levantadas por nosotros.)
