@@ -212,9 +212,9 @@ body {
 }
 form {
 
-    width: 800px;
-    min-height: 500px;
-    height: auto;
+    width: auto;
+
+
     border-radius: 5px;
     margin: 2% auto;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
@@ -287,4 +287,20 @@ input[type=text], select, input[type=email] {
 
     background : red;
 
+}
+
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+
+/* selected link */
+a:active {
+  color: blue;
 }
